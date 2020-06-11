@@ -1,0 +1,237 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;    
+}
+    
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color:hsl(248, 32%, 49%)
+}
+
+footer {
+    margin-top: 2%;
+    display: block;
+    position: relative;
+    font-size: 20px;
+}
+
+/* setting page */
+.site {
+      display: flex;
+      background-image: url(./images/bg-intro-desktop.png);
+      background-color: hsl(0, 100%, 74%);
+      padding: 10px;
+}
+
+/* defining leftside and placing things on the center of the page */
+
+.leftside {
+      width: 50%;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: justify;
+}
+
+/* styling text */
+  
+.leftside-text {
+      width: 60%;
+      color: white;
+      font-family: 'Poppins', sans-serif;
+}
+
+.title {
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+}
+
+.leftside-text p {
+      font-size: 17px;
+      letter-spacing: 0.1em;
+}
+  
+.main-text {
+      margin-top: 20px;
+}
+
+
+/* defining rightside */
+
+.rightside {
+      width: 50%;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+}
+
+.rightside-wrapper {
+      width: 60%;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+}
+
+/* Styling first button */
+  
+.btn {
+      width: 100%;
+      height: 3.5em;
+
+}
+
+.btn button {
+      width: 100%;
+      background-color: hsl(248, 32%, 49%);
+      color: white;
+      border: none;
+      border-radius: 10px;
+      padding: 10px 20px;
+      height: 100%;
+      cursor: pointer;
+      box-shadow: 0px 5px 0px 0px rgba(0,0,0,0.3);
+}
+
+/* Styling form */
+  
+.signup-form {
+      padding: 15px 0;
+      background-color: white;
+      border-radius: 10px;
+      width: 100%;
+      margin-top: 4%;
+      box-shadow: 0px 5px 0px 0px rgba(0,0,0,0.3);
+      
+}
+
+form {
+      
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      justify-content: center;
+      text-align: center;
+}
+
+form input {
+      margin: 1vw 1vw;
+      height: 50px;
+      border-radius: 5px;
+      border: 1px solid hsl(246, 25%, 77%);
+}
+
+form button {
+    margin: 1vw 1vw;
+    height: 40px;
+    background-color: hsl(154, 59%, 51%);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+  
+input::placeholder {
+      padding-left: 25px;
+}
+
+form p {
+      text-align: center;
+      width: 90%;
+      font-size: 10px;
+      margin: 1vw 1vw;
+      font-family:'Poppins', sans-serif;
+      color: hsl(246, 25%, 77%);
+}
+  
+form a {
+      text-decoration: none;
+      color: hsl(0, 100%, 74%);
+}
+
+/* Checking if form input is ok */
+
+form input:focus:invalid {
+    background: url("./images/icon-error.svg") no-repeat 85% 50%;
+}
+
+input:required:invalid::after{
+    content: url("./images/icon-error.svg") no-repeat 85% 50%;
+}
+
+/* mobile version */
+ 
+@media (max-width: 750px){
+    .site {
+        background-image: url(./images/bg-intro-mobile.png);
+        display: flex;
+        flex-direction: column;
+    }
+
+    .leftside {
+        width: 100%;
+        height: auto;
+    }
+
+    .leftside-text {
+        margin-top: 10%;
+        width: 100%;
+        text-align: center;
+    }
+
+    .title {
+        font-size: 1.5em;
+    }
+
+    .leftside-text p {
+        font-size: 15px;
+    }
+
+    .rightside {
+        width: 100%;
+        height: auto;
+    }
+
+    .rightside-wrapper {
+        width: 100%;
+        height: auto;
+    }
+
+    .btn {
+        width: 90%;
+    }
+
+    .btn button {
+        margin-top: 2%;
+        padding: 15px 30px;
+        font-size: 15px;
+    }
+
+    .signup-form {
+        width: 90%;
+        margin-top: 10%;
+    }
+   .green{
+       margin: 3% 3%;
+   }
+    form {
+        width: 100%;
+        margin: auto;
+    }
+
+    form input {
+        margin: 2vw 3vw;
+    }
+
+    form button {
+        margin-top: 5%;
+    }
+     
+ }
